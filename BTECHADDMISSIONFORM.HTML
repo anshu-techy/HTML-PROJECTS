@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>B.Tech Admission Form</title>
+  
+</head>
+<body>
+
+  <h2>B.Tech Admission Form</h2>
+
+  <form>
+    <!-- Personal Information -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+<br>
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select Gender--</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+<br>
+    <!-- Contact Info -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+<br>
+    <label for="phone">Mobile Number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+<br>
+    <!-- Academic Info -->
+                                             <label for="marks">12th Percentage (%)</label>
+                                          <input type="number" id="marks" name="marks" min="0" max="100" required>
+<br>
+    <!-- Branch Selection -->
+    <label for="branch">Choose Preferred Branch</label>
+    <select id="branch" name="branch" required>
+      <option value="">--Select Branch--</option>
+      <option>Computer Science Engineering (CSE)</option>
+      <option>Electronics & Communication Engineering (ECE)</option>
+      <option>Mechanical Engineering (ME)</option>
+      <option>Civil Engineering (CE)</option>
+      <option>Electrical Engineering (EE)</option>
+      <option>Information Technology (IT)</option>
+      <option>Artificial Intelligence & Data Science (AI & DS)</option>
+    </select>
+<br>
+    <!-- Address -->
+    <label for="address">Full Address</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+<br>
+    <!-- Submit -->
+    <button type="submit">Submit Application</button>
+  </form>
+<br>
+</body>
+</html>
